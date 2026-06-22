@@ -1,11 +1,25 @@
-# Hobby Collection Test Repository
+# Hobby Collection Test Automation
 
-This repository contains the standalone Playwright automated tests (E2E and API) for the Hobby Collection project.
+## Overview
+
+Automation testing for Hobby Collection web application.
+
+## Scope
+- UI Testing
+- API Testing
+- Performance Testing
+
+## Tools
+- Playwright
+- Typsecript
+- Axios
+- k6
 
 ## Project Structure
 
 - `src/api`: API tests against the Go backend.
 - `src/e2e`: E2E UI tests against the React frontend.
+- `src/performance`: k6 performance tests.
 - `src/global-setup.ts`: Handles initial authentication (JWT) and prepares the test environment.
 
 ## Getting Started
