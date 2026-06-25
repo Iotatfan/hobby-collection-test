@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { expectValidCollectionItem } from './schemas/collection.schema';
-import { expectValidResponseStructure } from './schemas/response.schema';
+import { expectValidCollectionItem } from '../../schemas/collection.schema';
+import { expectValidResponseStructure } from '../../schemas/response.schema';
 
 
 test.describe('GET /collection', () => {

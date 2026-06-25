@@ -67,9 +67,9 @@ Run all tests:
 npm test
 ```
 
-Run only API tests:
+Run only Read Only API tests:
 ```bash
-npx playwright test --project=api
+npx playwright test --project=api-read
 ```
 
 Run only E2E tests:

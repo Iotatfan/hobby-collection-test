@@ -12,8 +12,8 @@ export default defineConfig({
   reporter: 'html',
   projects: [
     {
-      name: 'api',
-      testDir: './src/api/tests',
+      name: 'api-read',
+      testDir: './src/api/tests/read',
       use: {
         baseURL: process.env.API_BASE_URL || 'http://localhost:8080',
       },
