@@ -64,11 +64,11 @@ test.describe('E2E: Collection List tests', () => {
         const collectionListPage = new CollectionListPage(page);
         await collectionListPage.goto();
 
-        const otherFilter = collectionListPage.categoryTab('Other Model Kits');
+        const otherFilter = collectionListPage.categoryTab('Other Model Kit');
         await otherFilter.click();
 
         await expect(otherFilter).toHaveAttribute('aria-selected', 'true');
-        expect(new URL(page.url()).searchParams.get('collection')).toBe('Other Model Kits');
+        expect(new URL(page.url()).searchParams.get('collection')).toBe('Other Model Kit');
 
         const gunpla = collectionListPage.badge('Gunpla');
         const figures = collectionListPage.badge('Figure');
