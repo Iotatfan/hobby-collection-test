@@ -15,8 +15,8 @@ Feature: Collection List
     When API return error
     Then collection items should be not be displayed
 
-  Scenario: Collection Statistics Error
-    When API return error
+  Scenario: View Collection Statistics
+    When API return success
     Then total items stats should be displayed
     And completed stats should be displayed
     And total backlog stats should be displayed

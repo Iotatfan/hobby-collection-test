@@ -5,5 +5,6 @@ export function expectValidResponseStructure(response: any) {
         code: 200,
         message: 'success',
         isError: false,
+        data: expect.any(Object),
     });
 }
