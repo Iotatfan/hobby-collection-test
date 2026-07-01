@@ -3,12 +3,14 @@ import * as path from 'path';
 
 require('dotenv').config();
 
+const isCI = Boolean(process.env.CI);
+
 export default defineConfig({
   globalSetup: require.resolve('./src/global-setup'),
   testDir: './src',
   fullyParallel: true,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: isCI ? 2 : 0,
+  ...(isCI ? { workers: 1 } : {}),
   reporter: 'html',
   projects: [
     {

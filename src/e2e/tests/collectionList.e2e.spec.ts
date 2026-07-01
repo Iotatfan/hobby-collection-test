@@ -2,13 +2,37 @@ import { test, expect } from '@playwright/test';
 import { CollectionListPage } from '../pages/CollectionListPage';
 
 test.describe('E2E: Collection List tests', () => {
+    test.beforeEach(async ({ page }) => {
+        await page.route('**/collection*', async route => {
+            const url = route.request().url();
+
+            if (url.includes('collection_type_id=2')) {
+                await route.fulfill({ path: 'fixtures/e2e/collection/GET_list-gunpla.mock.json' });
+            } else if (url.includes('collection_type_id=1')) {
+                await route.fulfill({ path: 'fixtures/e2e/collection/GET_list-figures.mock.json' });
+            } else if (url.includes('collection_type_id=3')) {
+                await route.fulfill({ path: 'fixtures/e2e/collection/GET_list-other.mock.json' });
+            } else {
+                await route.fulfill({ path: 'fixtures/e2e/collection/GET_list-all.mock.json' });
+            }
+        });
+
+        await page.route('**/statistics', async route => {
+            await route.fulfill({ path: 'fixtures/e2e/statistics/GET_success.mock.json' });
+        });
+
+        await page.route('**/filter', async route => {
+            await route.fulfill({ path: 'fixtures/e2e/filter/GET_success.mock.json' });
+        });
+    });
+
     test('should display the collection list when API return success', async ({ page }) => {
         const collectionListPage = new CollectionListPage(page);
         await collectionListPage.goto();
 
         const images = collectionListPage.coverImages();
 
-        await expect.poll(() => images.count()).toBeGreaterThan(1);
+        await expect.poll(() => images.count()).toBe(20);
     });
 
     test('should display statistics section when API return success', async ({ page }) => {

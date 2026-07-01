@@ -1,0 +1,90 @@
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "collections": [
+            {
+                "id": 41,
+                "title": "Meteor Unit [Mo Yu Driving Force]",
+                "type": {
+                    "id": 3,
+                    "name": "Other Model Kit",
+                    "scale": "1/144",
+                    "grade": {
+                        "id": 6,
+                        "name": "No Grade",
+                        "short_name": "NG",
+                        "collection_type_id": 3
+                    }
+                },
+                "release_type": {
+                    "id": 1,
+                    "name": "Regular"
+                },
+                "status": "1",
+                "series": {
+                    "id": 3,
+                    "name": "Mobile Suit Gundam Seed Destiny"
+                },
+                "built_at": null,
+                "acquired_at": "2025-07-21T17:00:00Z",
+                "cover": "/v1778060008/Hobby/Cover/chlxxpruol3xlgxo7xvg"
+            },
+            {
+                "id": 16,
+                "title": "Iron Sickle - Sir Kay",
+                "type": {
+                    "id": 3,
+                    "name": "Other Model Kit",
+                    "scale": "1/144",
+                    "grade": {
+                        "id": 6,
+                        "name": "No Grade",
+                        "short_name": "NG",
+                        "collection_type_id": 3
+                    }
+                },
+                "release_type": {
+                    "id": 1,
+                    "name": "Regular"
+                },
+                "status": "3",
+                "series": {
+                    "id": 0,
+                    "name": "No Series"
+                },
+                "built_at": "2025-02-22T17:00:00Z",
+                "acquired_at": null,
+                "cover": "/v1773661993/klkp8tsgjnvenzgubblv"
+            },
+            {
+                "id": 19,
+                "title": "FRSA MetalGreymon (Vaccine)",
+                "type": {
+                    "id": 3,
+                    "name": "Other Model Kit",
+                    "scale": "Unknown Scale",
+                    "grade": {
+                        "id": 8,
+                        "name": "Figure-rise Standard Amplified",
+                        "short_name": "FRSA",
+                        "collection_type_id": 3
+                    }
+                },
+                "release_type": {
+                    "id": 1,
+                    "name": "Regular"
+                },
+                "status": "3",
+                "series": {
+                    "id": 14,
+                    "name": "Digimon Adventure"
+                },
+                "built_at": "2024-01-27T17:00:00Z",
+                "acquired_at": null,
+                "cover": "/v1773819322/fkl9ifdxjptxlzodj29s"
+            }
+        ]
+    },
+    "isError": false
+}

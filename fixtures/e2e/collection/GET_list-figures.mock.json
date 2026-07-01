@@ -1,0 +1,90 @@
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "collections": [
+            {
+                "id": 42,
+                "title": "Amiya - Solo Around the World",
+                "type": {
+                    "id": 1,
+                    "name": "Figures",
+                    "scale": "1/7",
+                    "grade": {
+                        "id": 5,
+                        "name": "Figures",
+                        "short_name": "NG",
+                        "collection_type_id": 1
+                    }
+                },
+                "release_type": {
+                    "id": 4,
+                    "name": "Limited"
+                },
+                "status": "2",
+                "series": {
+                    "id": 9,
+                    "name": "Arknights"
+                },
+                "built_at": null,
+                "acquired_at": "2026-04-19T17:00:00Z",
+                "cover": "/v1779709604/Hobby/Cover/n8fsqvac2pg5vrg6c5mx"
+            },
+            {
+                "id": 31,
+                "title": "PVC Mari Iochi",
+                "type": {
+                    "id": 1,
+                    "name": "Figures",
+                    "scale": "1/7",
+                    "grade": {
+                        "id": 5,
+                        "name": "Figures",
+                        "short_name": "NG",
+                        "collection_type_id": 1
+                    }
+                },
+                "release_type": {
+                    "id": 4,
+                    "name": "Limited"
+                },
+                "status": "2",
+                "series": {
+                    "id": 16,
+                    "name": "Blue Archive"
+                },
+                "built_at": null,
+                "acquired_at": "2025-02-28T17:00:00Z",
+                "cover": "/v1774444014/Hobby/Cover/bjfdvxrvdanrly6auge4"
+            },
+            {
+                "id": 10,
+                "title": "Arknights Amiya Celebration Time Ver.",
+                "type": {
+                    "id": 1,
+                    "name": "Figures",
+                    "scale": "Unknown Scale",
+                    "grade": {
+                        "id": 5,
+                        "name": "Figures",
+                        "short_name": "NG",
+                        "collection_type_id": 1
+                    }
+                },
+                "release_type": {
+                    "id": 1,
+                    "name": "Regular"
+                },
+                "status": "2",
+                "series": {
+                    "id": 9,
+                    "name": "Arknights"
+                },
+                "built_at": null,
+                "acquired_at": "2024-07-10T17:00:00Z",
+                "cover": "/v1772982740/aib1wk8omtldm0wfpcqf"
+            }
+        ]
+    },
+    "isError": false
+}

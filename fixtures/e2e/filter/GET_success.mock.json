@@ -1,0 +1,67 @@
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "collection_types": [
+            {
+                "id": 1,
+                "name": "Figures"
+            },
+            {
+                "id": 2,
+                "name": "Gunpla"
+            },
+            {
+                "id": 3,
+                "name": "Other Model Kit"
+            }
+        ],
+        "release_types": [
+            {
+                "id": 3,
+                "name": "Gundam Base Exclusive"
+            },
+            {
+                "id": 4,
+                "name": "Limited"
+            },
+            {
+                "id": 2,
+                "name": "P-Bandai"
+            },
+            {
+                "id": 1,
+                "name": "Regular"
+            }
+        ],
+        "gunpla_grades": [
+            {
+                "id": 1,
+                "name": "High Grade",
+                "short_name": "HG"
+            },
+            {
+                "id": 3,
+                "name": "Master Grade",
+                "short_name": "MG"
+            },
+            {
+                "id": 4,
+                "name": "Master Grade Extreme",
+                "short_name": "MGEX"
+            },
+            {
+                "id": 2,
+                "name": "Real Grade",
+                "short_name": "RG"
+            }
+        ],
+        "figures_scales": [
+            {
+                "id": 5,
+                "name": "1/7"
+            }
+        ]
+    },
+    "isError": false
+}
